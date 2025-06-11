@@ -1,0 +1,197 @@
+h1.titulo1{
+    color: pink;
+    text-align: center;
+    font-weight: 900;
+    font-family: arial;
+    font-size: 50px;
+}
+p.parrafo1{
+    color: blue;
+    text-align: justify;
+    font-weight: 100;
+    font-family: arial;
+    font-size: 30px;
+}
+
+p.parrafo2{
+    color: red;
+    text-align: justify;
+    font-weight: 100;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+p.parrafo3{
+    color: purple;
+    text-align: justify;
+    font-weight: 100;
+    font-family: verdana;
+    font-size: 30px;
+}
+p.parrafo4{
+    color: green;
+    text-align: justify;
+    font-weight: 100;
+    font-family: verdana;
+    font-size: 30px;
+}
+p.parrafo5{
+    color: yellow;
+    text-align: justify;
+    font-weight: 100;
+    font-family: verdana;
+    font-size: 30px;
+}
+p.parrafo6{
+    color: brown;
+    text-align: justify;
+    font-weight: 100;
+    font-family: verdana;
+    font-size: 30px;
+}
+body{
+  background-color:#00ffd1;
+  font-family: Arial;
+}
+*{/* menú */
+  margin: 0;
+  padding: 0; /* Espacio entre el contenido del elemento y su borde */
+  -webkit-box-sizing: border-box; /*Calcular las medidas de un elemento */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.navegacion{
+  width: 1000px;
+  margin: 30px auto;
+  background: #fff;
+}
+.navegacion ul{
+  list-style: none; /* Quita las viñetas de lista */
+}
+.menu > li{
+  position: relative; /* la etiqueta position especifica cómo un elemento es posicionado en el documento */
+  display: inline-block; /* lista horizontal menú */
+}
+.menu >li > a{
+  display: block; /* Establece los tipos de visualización interna y externa de un elemento */
+  padding: 15px 20px; /* Tamaño del menú del menú */
+  color: #353535;
+  font-family: 'Open sans';
+  text-decoration: none; /* No se pincha ningún subrayado ni viñetas */
+}
+.menu li a:hover{/* Darle color a las letras del menú */
+  color: #CE7D35; 
+  transition: all .3s; /* Darle transición al color de las letras del menú */
+}
+/* submenu */
+.submenu{
+   position: absolute; /* la etiqueta position especifica cómo un elemento es posicionado en el documento */
+   background: #333333;
+   width: 120px;
+   visibility: hidden; /* Visualizar el efecto de selección, hidden esconde el elemento pero deja vacío el espacio */
+   opacity: 0; /* transparencia del elemento */
+    transition: opacity 1.5s;
+}
+.submenu li a{
+	display: block; /*Espacio entre las palabras*/
+	padding: 15px; /*Espacio entre las palabras*/
+	color: #fff; /*Color de la letra*/
+	font-family:  'Open sans ' ; /*tipode letra*/
+	text-decoration: none;
+}
+.menu li:hover .submenu{ /*Ocultar el submenu*/
+     visibility: visible; /*Al pasar el cursor el menu se visualiza el submenu*/
+	 opacity: 1;
+}
+.submenu{
+	position: absolute; /* la etiqueta position especifica cómo un elemento es posicionado en el documento */
+    background: #333333;
+    width: 120px;
+    visibility: hidden; /* Visualizar el efecto de selección, hidden esconde el elemento pero deja vacío el espacio */
+    opacity: 0; /* transparencia del elemento */
+    transition: opacity 1.5s;
+} 
+.submenu li a{
+	display: block; 
+	padding: 15px;
+	color: #fff ;
+	font-family:  'Open sans ';
+	text-decoration: none;
+}
+.menu li:hover .submenu{ /*Ocultar el submenu*/
+     visibility: visible; /*Al pasar el cursor el menu se visualiza el submenu*/
+	 opacity: 1;
+}
+.img { /* Diseño de la imagen */
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: block;
+    margin: 0px auto;
+    /*float: right;
+    float: left;  left | right | none */
+}
+.hipervinculo { /Diseño del hipervinculo/
+    float: left;
+}
+.video { /Diseño del video/
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+p.im { /* Diseño del párrafo imagen */
+    color: blue;
+    font-family: cursive;
+    font-size: x-large;
+}
+p.hi { /* Diseño del párrafo hipervinculo */
+    color: green;
+    font-family: cursive;
+    font-size: x-large;
+}
+p.vi { /* Diseño del párrafo video */
+    color: orange;
+    font-family: cursive;
+    font-size: x-large;
+}
+background-color: #FFA533;
+    font-family: Arial;
+}
+*/{/*menu*/
+    margin: 0;
+    padding: 0; /*Espacio entre el contenido del elemento y su borde*/
+    -webkit-box-sizing: border-box; /*Calcular las medidas de un elemento */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*tabla*/
+#tabla{
+    margin: 150px auto;
+    width: 600px;
+    float: center; /*ubica un elemento en su contenedor según la posición dada*/
+}
+table {
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse; /*Fusionar los bordes*/
+    width: 100%;
+}
+th, td{
+    border: solid 1px black;
+    padding: 5px;
+}
+thead{/*Bloque de filas*/
+    background-color: #246355;
+    border-bottom: solid 5px #0F362D; /*Establece el estilo del borde inferior de un elemento, se define el estilo, grosor y color*/
+    color: white;
+}
+tr:nth-child(even){ /*Selección de varios elementos hijo, selección de una línea y otra no*/
+    background-color: #ddd;
+}
+
+tr:hover td{/*Al seleccionar una fila colorea el espacio y la letra la pasa a blanco */
+    background-color: #369681;
+    color: white;
+}
